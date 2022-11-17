@@ -31,6 +31,13 @@
 .social{
   display: flex;
   justify-content: space-between;
+  &__item{
+    transition: 0.5s all;
+    &:hover{
+      transition: 0.5s all;
+      transform: scale(1.2);
+    }
+  }
   &__item-img{
     max-width: 50px;
   }

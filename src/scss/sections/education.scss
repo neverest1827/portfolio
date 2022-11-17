@@ -1,0 +1,21 @@
+.education{
+  padding: 60px 0;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    max-width: 500px;
+  }
+  &__list-title,
+  &__list-subtitle{
+    text-align: center;
+    font-size: 16px;
+  }
+  &__list-title{
+    font-size: 20px;
+  }
+}

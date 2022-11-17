@@ -10,7 +10,9 @@ $sub-accent: #f1f1f1;
   color: $text;
   border-radius: 5px;
   text-decoration: none;
+  transition: 0.2s all;
   &:hover{
+    transition: 0.2s all;
     color: #fff;
   }
 }
