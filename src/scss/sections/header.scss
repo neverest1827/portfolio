@@ -1,0 +1,34 @@
+.header{
+ &__inner{
+   border-bottom: 2px solid $accent;
+ }
+}
+
+.nav{
+  padding: 20px 0;
+  display: flex;
+  justify-content: end;
+  &__list{
+    display: flex;
+  }
+  &__list-item{
+
+    padding-right: 20px;
+    &:last-child{
+      padding-right: 0
+    }
+  }
+  &__link{
+    text-decoration: none;
+    background-color: #292929;
+    padding: 10px;
+    border-radius: 5px;
+    color: $text;
+    transition: 0.2s all;
+    &:hover{
+      color: #fff;
+      transition: 0.2s all;
+    }
+  }
+
+}

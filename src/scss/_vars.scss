@@ -1,6 +1,19 @@
 //Переменные цветов
-$bg-dark: #29282f;
+$accent: #292929;
+$text: #cacacaca;
+$sub-accent: #f1f1f1;
 
+
+%btn{
+  padding: 10px;
+  background-color: $accent;
+  color: $text;
+  border-radius: 5px;
+  text-decoration: none;
+  &:hover{
+    color: #fff;
+  }
+}
 
 
 
