@@ -20,3 +20,20 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .skills{
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills{
+    &__list{
+      flex-wrap: wrap;
+    }
+    &__list-item{
+      margin-bottom: 10px;
+    }
+  }
+}

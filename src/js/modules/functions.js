@@ -19,4 +19,36 @@ export function isWebp() {
     });
 }
 
+//Обработка события нажатия по кнопке меню
+export function menuPress(selector) {
+    //Добавляем обработчик события при нажатии
+    selector.addEventListener('click', function () {
+        //Добавляем класс элементу
+        selector.classList.toggle("nav__btn--active");
+        document.querySelector('.header__inner').classList.toggle("header__inner--active")
+    });
+}
+
+export function scrolTo() {
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (document.querySelector('.nav__btn--active')) {
+                document.querySelector('.nav__btn--active').classList.remove('nav__btn--active')
+                document.querySelector('.header__inner--active').classList.remove('header__inner--active')
+            }
+            const id = smoothLink.getAttribute('href');
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            if (document.querySelector('.social--visible')) {
+                document.querySelector('.social--visible').classList.remove('social--visible')
+            }
+        });
+
+    }
+
+}
 
