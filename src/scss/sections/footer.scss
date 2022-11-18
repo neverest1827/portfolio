@@ -1,0 +1,11 @@
+.footer{
+  background-color: $sub-accent;
+  &__inner{
+    padding: 20px 0;
+    border-top: 2px solid $accent;
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+  }
+}
